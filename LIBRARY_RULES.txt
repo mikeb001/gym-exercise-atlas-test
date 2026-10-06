@@ -1,0 +1,5 @@
+Gym Exercise Atlas v16
+Library: 252 exercises retained.
+New feature: Saved Routines.
+Save Workout now asks for a routine name and saves the exact generated exercise routine in localStorage under atlasSavedRoutines.
+Saved Routines has its own navigation tab. Use This Workout restores the saved exercises, duration, body-part selections, and training level into the builder so the routine can be repeated.

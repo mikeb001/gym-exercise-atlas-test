@@ -1,0 +1,23 @@
+{
+  "name": "Gym Exercise Atlas",
+  "short_name": "Gym Atlas",
+  "description": "M&S-aligned exercise library and workout tracker.",
+  "start_url": "/gym-exercise-atlas/",
+  "scope": "/gym-exercise-atlas/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f5f7",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "/gym-exercise-atlas/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/gym-exercise-atlas/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
