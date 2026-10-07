@@ -205,6 +205,17 @@ body{padding-bottom:env(safe-area-inset-bottom)}
   .exerciseRow{grid-template-columns:40px minmax(0,1fr) auto!important}
   .rowTitle,.rowMeta{overflow-wrap:anywhere;word-break:break-word}
 }
+</style><style id="modal-layout-fix">
+.modal{display:none;position:fixed;inset:0;background:rgba(15,23,42,.58);z-index:40;padding:20px;align-items:center;justify-content:center}
+.modal.open{display:flex}
+.modal .panel{background:#fff;width:min(950px,100%);max-height:91vh;overflow:auto;border-radius:22px}
+.modal .modalhead{display:flex;justify-content:space-between;gap:20px;padding:21px 24px;border-bottom:1px solid var(--line)}
+.modal .modalgrid{display:grid;grid-template-columns:1fr 1fr}
+.modal .bigvisual{min-height:340px;background:linear-gradient(135deg,#eef2f6,#dfe5ec);position:relative}
+.modal .details{padding:25px}
+.modal .close{border:0;background:#eef1f5;border-radius:10px;width:38px;height:38px;font-size:20px;cursor:pointer}
+.replacePanel{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:60;display:none;align-items:center;justify-content:center;padding:20px}
+.replacePanel.open{display:flex}
 </style></head><body>
 <header><div class="bar"><div class="brand">Exercise Atlas</div><nav><div class="navRow"><button class="navbtn active" id="libNav">Exercise Library</button><button class="navbtn" id="buildNav">Build Workout</button><button class="navbtn" id="activeNav">Active Workout</button></div><div class="navRow"><button class="navbtn" id="historyNav">History</button><button class="navbtn" id="savedNav">Saved Routines</button></div></nav><div class="search"><input id="search" placeholder="Search exercises…"></div></div></header>
 <main><section id="library"><section class="hero"><div><h1>Exercise Library</h1><p>Browse the Exercise Atlas library and explore individual movements.</p></div><div class="count" id="count"></div></section><div class="filters" id="filters"></div><div class="grid" id="grid"></div></section>
