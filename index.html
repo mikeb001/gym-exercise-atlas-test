@@ -19,44 +19,104 @@ main{max-width:1280px;margin:auto;padding:30px 24px 70px}.hero{display:flex;just
 .motionStudy.realistic svg{filter:drop-shadow(0 7px 12px rgba(15,23,42,.08))}
 .realistic .rfloor{stroke:#aeb8c4;stroke-width:4;stroke-linecap:round}.realistic .machine{stroke:#687586;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;fill:none}.realistic .machine path{stroke:#718096;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;fill:none}.realistic .equip{stroke:#202936;stroke-width:7;stroke-linecap:round;fill:none}.realistic .equip rect{fill:#2b3440;stroke:#111827;stroke-width:2}.realistic .weights circle,.realistic .weights rect{fill:#202936;stroke:#111827;stroke-width:3}.realistic .human{transform-box:fill-box;transform-origin:center}.realistic .skin{fill:#efbd99;stroke:#7c4b35;stroke-width:2}.realistic .head3{fill:#efbd99;stroke:#7c4b35;stroke-width:2}.realistic .shirt3{fill:#334155;stroke:#1f2937;stroke-width:3}.realistic .shorts3{fill:#475569;stroke:#1f2937;stroke-width:3}.realistic .limb3{fill:none;stroke:#efbd99;stroke-width:14;stroke-linecap:round;stroke-linejoin:round}.realistic .shoe{fill:#202936;stroke:#111827;stroke-width:2}.realistic .hair{fill:#29313b}.realistic .motionArc{stroke:#2563eb;stroke-width:4;stroke-dasharray:7 7;fill:none;opacity:.65}.realistic .call{fill:rgba(255,255,255,.93);stroke:#cbd5e1;stroke-width:1.5}.realistic .ct{font:800 12px Inter,system-ui,sans-serif;fill:#334155}.realistic .phase3{font:900 11px Inter,system-ui,sans-serif;letter-spacing:1px;fill:#475569}.realistic .rep3{font:800 12px Inter,system-ui,sans-serif;fill:#1d4ed8}.realistic .cycle{animation-duration:2.8s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function:ease-in-out}.realistic .realSquat{animation-name:rSquat}.realistic .realBench{transform:rotate(90deg) translateY(-18px);animation-name:rBench}.realistic .realRow{animation-name:rRow}.realistic .realPulldown{animation-name:rPulldown}.realistic .realPullup{animation-name:rPullup}.realistic .realCurl{animation-name:rCurl}.realistic .realLunge{animation-name:rLunge}.realistic .realHinge{animation-name:rHinge}.realistic .realShoulder{animation-name:rShoulder}.realistic .realCalf{animation-name:rCalf}.realistic .realExtension{animation-name:rExtension}.realistic .realLegpress{animation-name:rLegpress}.realistic .realPressdown{animation-name:rPressdown}.realistic .realFly{animation-name:rFly}.realistic .realFacepull{animation-name:rFacepull}.realistic .realDip{animation-name:rDip}.realistic .realLandmine{animation-name:rLandmine}.realistic .realStand{animation-name:rStand}.realistic.slow .cycle{animation-duration:5.6s}.realistic.paused .cycle{animation-play-state:paused}
 @keyframes rSquat{from{transform:translateY(-2px)}to{transform:translateY(26px) scaleY(.93)}}@keyframes rBench{from{transform:translateY(9px)}to{transform:translateY(-11px)}}@keyframes rRow{from{transform:translateX(13px)}to{transform:translateX(-10px)}}@keyframes rPulldown{from{transform:translateY(-10px)}to{transform:translateY(11px)}}@keyframes rPullup{from{transform:translateY(13px)}to{transform:translateY(-20px)}}@keyframes rCurl{from{transform:rotate(0deg)}to{transform:rotate(-8deg)}}@keyframes rLunge{from{transform:translateX(-7px)}to{transform:translateX(22px)}}@keyframes rHinge{from{transform:rotate(0deg) translateY(0)}to{transform:rotate(9deg) translateY(18px)}}@keyframes rShoulder{from{transform:translateY(8px)}to{transform:translateY(-8px)}}@keyframes rCalf{from{transform:translateY(4px)}to{transform:translateY(-10px)}}@keyframes rExtension{from{transform:translateY(5px)}to{transform:translateY(-6px)}}@keyframes rLegpress{from{transform:translateY(8px)}to{transform:translateY(-8px)}}@keyframes rPressdown{from{transform:translateY(-4px)}to{transform:translateY(8px)}}@keyframes rFly{from{transform:scaleX(.97)}to{transform:scaleX(1.03)}}@keyframes rFacepull{from{transform:translateX(5px)}to{transform:translateX(-7px)}}@keyframes rDip{from{transform:translateY(3px)}to{transform:translateY(20px)}}@keyframes rLandmine{from{transform:rotate(0deg)}to{transform:rotate(-7deg)}}@keyframes rStand{from{transform:translateY(2px)}to{transform:translateY(-2px)}}
-.builder{display:none}.builder.show{display:block}.builderTop{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}.builderTop h2{font-size:32px;letter-spacing:-1px;margin:0 0 7px}.builderTop p{margin:0;color:var(--muted)}.builderLayout{display:grid;grid-template-columns:340px 1fr;gap:20px}.controls,.plan{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.controls{padding:20px;height:max-content}.field{margin-bottom:20px}.levelHelp{margin-top:8px;color:var(--muted);font-size:12px;line-height:1.45}.field label{display:block;font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.5px;margin-bottom:9px;color:#4b5563}.select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}.bodyChoices{display:grid;grid-template-columns:1fr 1fr;gap:8px}.bodyChoice{padding:10px;border:1px solid var(--line);background:#fff;border-radius:10px;font-weight:700;cursor:pointer;text-align:left}.bodyChoice.active{background:#eef2ff;border-color:#a7b8ff;color:#1d4ed8}.bodyChoice:disabled{opacity:.42;cursor:not-allowed;background:#f8f9fa}.duration{display:flex;gap:8px}.duration button{flex:1;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px;font-weight:700;cursor:pointer}.duration button.active{background:var(--accent);color:#fff;border-color:var(--accent)}.plan{padding:22px}.planHead{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:15px}.planHead h3{margin:0;font-size:22px}.planStats{display:flex;gap:16px;color:var(--muted);font-size:13px}.exerciseRow{display:grid;grid-template-columns:48px 1fr auto auto;gap:13px;align-items:center;padding:14px 0;border-bottom:1px solid #edf0f2}.exerciseRow:last-child{border-bottom:0}.num{width:38px;height:38px;border-radius:11px;background:#f0f2f5;display:grid;place-items:center;font-weight:850}.rowTitle{font-weight:800}.rowMeta{font-size:12px;color:var(--muted);margin-top:3px}.drag{color:#9aa1a9;cursor:grab}.smallbtn{border:0;background:#f0f2f5;border-radius:8px;padding:7px 9px;cursor:pointer;font-weight:700}.replacebtn{border:1px solid #cbd5e1;background:#fff;border-radius:8px;padding:7px 10px;cursor:pointer;font-weight:800;color:#1d4ed8}.replacebtn:hover{background:#eef2ff}.replacePanel{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:60;display:none;align-items:center;justify-content:center;padding:20px}.replacePanel.open{display:flex}.replaceBox{width:min(620px,100%);max-height:82vh;overflow:auto;background:#fff;border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.2);padding:22px}.replaceHead{display:flex;justify-content:space-between;align-items:start;gap:15px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:12px}.replaceHead h3{margin:0;font-size:21px}.replaceHead p{margin:5px 0 0;color:var(--muted);font-size:13px}.replaceList{display:grid;gap:8px}.replaceOption{display:flex;justify-content:space-between;align-items:center;text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 13px;cursor:pointer}.replaceOption:hover{border-color:#9fb0ff;background:#f8f9ff}.replaceOption strong{display:block}.replaceOption span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.replaceArrow{font-weight:900;color:#2563eb}@media(max-width:650px){.exerciseRow{grid-template-columns:40px 1fr auto}.exerciseRow .replacebtn{grid-column:2}.exerciseRow .smallbtn{grid-column:3;grid-row:1}.exerciseRow .replacebtn{grid-row:2}.planStats{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;margin-top:6px}.planStats span{white-space:nowrap}}.emptyPlan{text-align:center;padding:60px 20px;color:var(--muted)}.startBar{display:flex;justify-content:flex-end;gap:9px;margin-top:18px}.start{background:#2563eb;color:white;border:0;border-radius:11px;padding:12px 17px;font-weight:800;cursor:pointer}
-.modal{display:none;position:fixed;inset:0;background:rgba(15,23,42,.58);z-index:40;padding:20px;align-items:center;justify-content:center}.modal.open{display:flex}.panel{background:#fff;width:min(950px,100%);max-height:91vh;overflow:auto;border-radius:22px}.modalhead{display:flex;justify-content:space-between;gap:20px;padding:21px 24px;border-bottom:1px solid var(--line)}.modalhead h2{margin:0;font-size:26px}.close{border:0;background:#eef1f5;border-radius:10px;width:38px;height:38px;font-size:20px;cursor:pointer}.modalgrid{display:grid;grid-template-columns:1fr 1fr}.bigvisual{min-height:340px;background:linear-gradient(135deg,#eef2f6,#dfe5ec);position:relative}.details{padding:25px}.motionStandard{margin-top:14px;padding:10px 12px;border-radius:10px;background:#eef2ff;color:#3730a3;font-size:12px;font-weight:800;line-height:1.45}.details h4{margin:20px 0 8px}.details p,.details li{color:#555e69;line-height:1.55;font-size:14px}.dose{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.dose div{background:#f5f6f8;border-radius:10px;padding:10px}.dose b{display:block;font-size:15px}.dose span{font-size:11px;color:var(--muted)}.toast{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom));background:#111827;color:#fff;padding:12px 15px;border-radius:11px;box-shadow:var(--shadow);display:none;z-index:60;font-size:13px;font-weight:700}
-@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.builderLayout{grid-template-columns:1fr}.search input{width:220px}}@media(max-width:650px){
+.builder{display:none}.builder.show{display:block}.builderTop{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}.builderTop h2{font-size:32px;letter-spacing:-1px;margin:0 0 7px}.builderTop p{margin:0;color:var(--muted)}.builderLayout{display:grid;grid-template-columns:340px 1fr;gap:20px}.controls,.plan{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.controls{padding:20px;height:max-content}.field{margin-bottom:20px}.levelHelp{margin-top:8px;color:var(--muted);font-size:12px;line-height:1.45}.field label{display:block;font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:.5px;margin-bottom:9px;color:#4b5563}.select{width:100%;padding:11px;border:1px solid var(--line);border-radius:10px;background:#fff}.bodyChoices{display:grid;grid-template-columns:1fr 1fr;gap:8px}.bodyChoice{padding:10px;border:1px solid var(--line);background:#fff;border-radius:10px;font-weight:700;cursor:pointer;text-align:left}.bodyChoice.active{background:#eef2ff;border-color:#a7b8ff;color:#1d4ed8}.bodyChoice:disabled{opacity:.42;cursor:not-allowed;background:#f8f9fa}.duration{display:flex;gap:8px}.duration button{flex:1;border:1px solid var(--line);background:#fff;border-radius:10px;padding:9px;font-weight:700;cursor:pointer}.duration button.active{background:var(--accent);color:#fff;border-color:var(--accent)}.plan{padding:22px}.planHead{display:flex;justify-content:space-between;gap:15px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px;margin-bottom:15px}.planHead h3{margin:0;font-size:22px}.planStats{display:flex;gap:16px;color:var(--muted);font-size:13px}.exerciseRow{display:grid;grid-template-columns:48px 1fr auto auto;gap:13px;align-items:center;padding:14px 0;border-bottom:1px solid #edf0f2}.exerciseRow:last-child{border-bottom:0}.num{width:38px;height:38px;border-radius:11px;background:#f0f2f5;display:grid;place-items:center;font-weight:850}.rowTitle{font-weight:800}.rowMeta{font-size:12px;color:var(--muted);margin-top:3px}.drag{color:#9aa1a9;cursor:grab}.smallbtn{border:0;background:#f0f2f5;border-radius:8px;padding:7px 9px;cursor:pointer;font-weight:700}.replacebtn{border:1px solid #cbd5e1;background:#fff;border-radius:8px;padding:7px 10px;cursor:pointer;font-weight:800;color:#1d4ed8}.replacebtn:hover{background:#eef2ff}.replacePanel{position:fixed;inset:0;background:rgba(15,23,42,.45);z-index:60;display:none;align-items:center;justify-content:center;padding:20px}.replacePanel.open{display:flex}.replaceBox{width:min(620px,100%);max-height:82vh;overflow:auto;background:#fff;border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.2);padding:22px}.replaceHead{display:flex;justify-content:space-between;align-items:start;gap:15px;border-bottom:1px solid var(--line);padding-bottom:15px;margin-bottom:12px}.replaceHead h3{margin:0;font-size:21px}.replaceHead p{margin:5px 0 0;color:var(--muted);font-size:13px}.replaceList{display:grid;gap:8px}.replaceOption{display:flex;justify-content:space-between;align-items:center;text-align:left;border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px 13px;cursor:pointer}.replaceOption:hover{border-color:#9fb0ff;background:#f8f9ff}.replaceOption strong{display:block}.replaceOption span{display:block;color:var(--muted);font-size:12px;margin-top:3px}.replaceArrow{font-weight:900;color:#2563eb}@media(max-width:650px){
 .bar{
-  padding:calc(9px + env(safe-area-inset-top)) 10px 9px;
-  gap:7px;
-  align-items:center;
-  flex-wrap:wrap;
-  overflow:visible;
+  max-width:none;
+  padding:calc(10px + env(safe-area-inset-top)) 12px 11px;
+  display:flex;
+  flex-direction:column;
+  align-items:stretch;
+  gap:9px;
 }
 .bar .brand{
-  font-size:17px;
-  flex:1 1 auto;
-  min-width:150px;
-}
-.bar .primary{
-  flex:0 0 auto;
-  white-space:nowrap;
+  width:100%;
+  text-align:center;
+  font-size:28px;
+  line-height:1.05;
+  letter-spacing:-.8px;
+  font-weight:900;
+  color:var(--ink);
 }
 .bar nav{
-  order:3;
   width:100%;
   display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
+  flex-direction:column;
   gap:5px;
-  overflow:visible;
+}
+.bar nav .navRow{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:5px;
+  width:100%;
+}
+.bar nav .navRow:nth-child(2){
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  width:66.666%;
+  align-self:center;
 }
 .navbtn{
-  padding:8px 8px;
-  white-space:nowrap;
-  font-size:11px;
-  flex:1 1 auto;
+  width:100%;
   min-width:0;
+  padding:9px 5px;
+  border:1px solid #e2e5e9;
+  border-radius:9px;
+  background:#fff;
+  white-space:nowrap;
+  font-size:12px;
+  line-height:1.15;
+  font-weight:750;
+  text-align:center;
 }
-.bar nav .navbtn{flex:1 1 0;text-align:center}.bar nav{gap:4px}
+.navbtn.active{
+  background:#f0f2f5;
+  color:var(--ink);
+  border-color:#d5d9df;
+}
 .search{display:none}
-main{padding:20px 16px calc(70px + env(safe-area-inset-bottom))}.hero{align-items:start;flex-direction:column}.hero h1{font-size:35px}.grid{grid-template-columns:1fr}.modalgrid{grid-template-columns:1fr}.bigvisual{min-height:270px}.exerciseRow{grid-template-columns:40px 1fr auto}.planStats{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;margin-top:6px}.planStats span{white-space:nowrap}}
+main{padding:20px 16px calc(70px + env(safe-area-inset-bottom))}
+.hero{align-items:start;flex-direction:column}
+.hero h1{font-size:35px}
+.grid{grid-template-columns:1fr}
+.modalgrid{grid-template-columns:1fr}
+.bigvisual{min-height:270px}
+.exerciseRow{grid-template-columns:40px 1fr auto}
+.planStats{display:flex;flex-wrap:wrap;gap:8px 14px;font-size:12px;margin-top:6px}
+.planStats span{white-space:nowrap}
+}
+
+@media(min-width:651px){
+.bar{
+  position:relative;
+  flex-direction:column;
+  justify-content:center;
+  gap:9px;
+  padding:16px 24px 13px;
+}
+.bar .brand{
+  font-size:28px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.8px;
+  text-align:center;
+}
+.bar nav{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+}
+.bar nav .navRow{
+  display:flex;
+  justify-content:center;
+  gap:5px;
+}
+.bar .search{
+  position:absolute;
+  right:24px;
+  top:50%;
+  transform:translateY(-50%);
+}
+}
 
 .workoutGroup{margin:0 0 20px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card)}
 .workoutGroupHead{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;background:linear-gradient(135deg,rgba(105,240,174,.12),rgba(105,240,174,.03));border-bottom:1px solid var(--line)}
@@ -132,9 +192,9 @@ body{padding-bottom:env(safe-area-inset-bottom)}
 </style>
 
 </head><body>
-<header><div class="bar"><div class="brand">Exercise <span>Atlas</span></div><nav><button class="navbtn active" id="libNav">Exercise Library</button><button class="navbtn" id="buildNav">Build Workout</button><button class="navbtn" id="activeNav">Active Workout</button><button class="navbtn" id="historyNav">History</button><button class="navbtn" id="savedNav">Saved Routines</button></nav><div class="search"><input id="search" placeholder="Search exercises…"></div></div></header>
+<header><div class="bar"><div class="brand">Exercise Atlas</div><nav><div class="navRow"><button class="navbtn active" id="libNav">Exercise Library</button><button class="navbtn" id="buildNav">Build Workout</button><button class="navbtn" id="activeNav">Active Workout</button></div><div class="navRow"><button class="navbtn" id="historyNav">History</button><button class="navbtn" id="savedNav">Saved Routines</button></div></nav><div class="search"><input id="search" placeholder="Search exercises…"></div></div></header>
 <main><section id="library"><section class="hero"><div><h1>Exercise Library</h1><p>Browse the Exercise Atlas library and explore individual movements.</p></div><div class="count" id="count"></div></section><div class="filters" id="filters"></div><div class="grid" id="grid"></div></section>
-<section class="builder" id="builder"><div class="builderTop"><div><h2>Build your workout</h2><p>Choose your training level, workout length, and body parts to be trained and let Exercise Atlas assemble a balanced session.</p></div><button class="secondary" id="backLib">← Library</button></div><div class="builderLayout"><aside class="controls"><div class="field"><label>Training level</label><select class="select" id="experience"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select><div class="levelHelp" id="levelHelp">Intermediate: a balanced mix of free weights, cables, machines, and compound movements.</div></div><div class="field"><label>Workout length</label><div class="duration" id="duration"><button data-min="30">30 min</button><button data-min="45" class="active">45 min</button><button data-min="60">60 min</button></div></div><div class="field"><label>Body parts</label><div class="bodyChoices" id="bodyChoices"></div></div><button class="primary" style="width:100%" id="generate">Generate workout</button></aside><section class="plan"><div class="planHead"><div><h3 id="planTitle">45-Minute Full Session</h3><div class="planStats" id="planStats"></div></div><button class="secondary" id="shuffle">↻ Regenerate</button></div><div id="planRows"></div><div class="startBar"><button class="secondary" id="save">♡ Save workout</button><button class="start" id="start">Start workout</button></div></section></div></section>
+<section class="builder" id="builder"><div class="builderTop"><div><h2>Build your workout</h2><p>choose your training level, workout length, and body parts to be trained and let Exercise Atlas assemble a balanced session.</p></div><button class="secondary" id="backLib">← Library</button></div><div class="builderLayout"><aside class="controls"><div class="field"><label>Training level</label><select class="select" id="experience"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select><div class="levelHelp" id="levelHelp">Intermediate: a balanced mix of free weights, cables, machines, and compound movements.</div></div><div class="field"><label>Workout length</label><div class="duration" id="duration"><button data-min="30">30 min</button><button data-min="45" class="active">45 min</button><button data-min="60">60 min</button></div></div><div class="field"><label>Body parts</label><div class="bodyChoices" id="bodyChoices"></div></div><button class="primary" style="width:100%" id="generate">Generate workout</button></aside><section class="plan"><div class="planHead"><div><h3 id="planTitle">45-Minute Full Session</h3><div class="planStats" id="planStats"></div></div><button class="secondary" id="shuffle">↻ Regenerate</button></div><div id="planRows"></div><div class="startBar"><button class="secondary" id="save">♡ Save workout</button><button class="start" id="start">Start workout</button></div></section></div></section>
 <section class="logView" id="activeWorkout"><div class="logTop"><div><h2>Active workout</h2><p id="activeSubtitle">Log your actual weight and reps as you go.</p></div><div class="workoutSummary" id="activeStats"></div></div><div id="activeRows"></div><div class="timer"><span>Rest</span><strong id="timerValue">1:30</strong><button onclick="addRest(30)">+30 sec</button><button onclick="toggleTimer()" id="timerBtn">Start</button><button onclick="resetTimer()">Reset</button></div><div class="startBar"><button class="secondary" id="cancelWorkout">Cancel</button><button class="start" id="finishWorkout">Finish & Save</button></div></section>
 <section class="logView" id="savedRoutines"><div class="logTop"><div><h2>Saved Routines</h2><p>Workout routines you saved to this browser so you can repeat them later.</p></div></div><div id="savedRoutineRows"></div></section> <section class="logView" id="history"><div class="logTop"><div><h2>Workout history</h2><p>Your completed workouts and the work you performed.</p></div><button class="secondary" onclick="clearHistory()">Clear history</button></div><div id="historyRows"></div></section></main>
 <div class="modal" id="modal"><div class="panel"><div class="modalhead"><div><h2 id="mtitle"></h2><div class="meta" id="mmeta"></div></div><button class="close" id="close">×</button></div><div class="modalgrid"><div class="bigvisual" id="mvisual"></div><div class="details"><div class="tags" id="mtags"></div><div id="mstandard" class="motionStandard">Instructional animation: start position → movement path → controlled return.</div><h4>How to perform</h4><p id="mhow"></p><h4>Key cues</h4><ul id="mcues"></ul><h4>Suggested starting point</h4><div class="dose" id="mdose"></div><h4>Common mistakes</h4><p id="mistakes"></p><div class="mnsVideoBox" id="mnsVideoBox"><a id="mnsVideoBtn" class="mnsVideoBtn" href="#" target="_blank" rel="noopener">▶ Watch Muscle &amp; Strength Demonstration</a><div class="mnsVideoNote" id="mnsVideoNote">Opens the demonstration on Muscle &amp; Strength.</div></div></div></div></div></div><div class="replacePanel" id="replacePanel"><div class="replaceBox"><div class="replaceHead"><div><h3>Replace exercise</h3><p id="replaceSub">Choose another movement for the same body part.</p></div><button class="secondary" onclick="closeReplace()">Close</button></div><div class="replaceList" id="replaceList"></div></div></div><div class="toast" id="toast"></div>
